@@ -96,7 +96,7 @@ h1 #undr {
 }
 
 ::-webkit-scrollbar {
-    /* display: none; */
+    display: none;
 }
 
 h3 span {
