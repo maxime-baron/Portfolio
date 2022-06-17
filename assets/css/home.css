@@ -143,8 +143,8 @@ span.ap::after {
 }
 
 h3.ap {
-    animation-play-state: running;
     -webkit-animation-play-state: running;
+    animation-play-state: running;
 }
 
 @keyframes slide-in {
@@ -156,8 +156,8 @@ h3.ap {
 
 @keyframes slide-out {
     100% {
-        transform: translateX(100%);
         -webkit-transform: translateX(-100%);
+        transform: translateX(100%);
     }
 }
 

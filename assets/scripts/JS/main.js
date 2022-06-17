@@ -50,15 +50,10 @@ function phraseSwitch() {
     let alt = document.querySelector(".alt")
     let start = document.querySelector(".start")
 
-    if (document.querySelector("#home").getBoundingClientRect().bottom < window.innerHeight)
-        start.style.display = "none"
+    if (document.querySelector("#home").getBoundingClientRect().top < window.innerHeight)
+        start.style.visibility = "visible"
     else
-        start.style.display = "block"
-
-    // if (parseInt(alt.style.top) < 0)
-    //     start.style.visibility = "visible"
-    // else
-    //     start.style.visibility = "hidden"
+        start.style.visibility = "hidden"
 
     if (parseInt(start.offsetTop) > about.getBoundingClientRect().top)
         start.style.position = "relative"
@@ -144,7 +139,7 @@ function pageNumAdd() {
     }
 }
 
-//Changement de couleur en fonction du font
+//Changement de couleur en fonction du font pageInfo
 function pageNumSwitch() {
     let WhiteSec = document.querySelectorAll('.whiteBack')
     let pageInfo = document.querySelector(".pageInfo")
@@ -165,7 +160,7 @@ function pageNumSwitch() {
     }
 }
 
-//Changement de couleur en fonction du font
+//Changement de couleur en fonction du font burgerMenu
 function menuSwitch() {
     let WhiteSec = document.querySelectorAll('.whiteBack')
     let menu = document.querySelector(".burgerMenu")
