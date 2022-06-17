@@ -11,8 +11,7 @@
 }
 
 #portfolio h3 {
-    line-height: 9.33vh;
-    margin-bottom: 3vh;
+    margin-bottom: 10vh;
     color: transparent;
 }
 
@@ -130,7 +129,7 @@
 @media screen and (max-width:630px) {
 
     #portfolio .content {
-        padding: 2.55vh 9.33vw;
+        padding: 5.55vh 9.33vw;
     }
 
     .projet p {
@@ -146,6 +145,10 @@
         margin: 1vh auto;
         flex-direction: column;
         height: fit-content;
+    }
+
+    #portfolio h3 {
+        margin-bottom: 4vh;
     }
 }
 
@@ -167,5 +170,13 @@
         height: 3.66vh;
         padding: 5% 5%;
         font-size: 2.441rem;
+    }
+
+    #portfolio h3 {
+        margin-bottom: 6vh;
+    }
+
+    #portfolio .content {
+        padding: 8.55vh 9.33vw;
     }
 }
