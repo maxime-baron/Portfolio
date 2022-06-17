@@ -1,0 +1,90 @@
+#menu {
+    background-color: #101010;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    -webkit-transition: all 0.2s ease-in 0.6s;
+    transition: all 0.2s ease-in 0.6s;
+    z-index: 1;
+}
+
+#menu.open {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.2s ease-out 0.3s;
+    transition: all 0.2s ease-out 0.3s;
+}
+
+.version {
+    color: #FAFAFA;
+    position: absolute;
+    bottom: 3.1vh;
+    right: 38px;
+    transform: rotate(90deg);
+    transform-origin: right;
+}
+
+.footer {
+    color: #FAFAFA;
+    position: absolute;
+    bottom: 3.1vh;
+    left: 8.3vw;
+}
+
+.list {
+    color: #FAFAFA;
+    position: relative;
+    left: 18.47vw;
+    top: 19.5vh;
+    width: fit-content;
+}
+
+.list span {
+    margin-right: 6.94vw;
+}
+
+.list h2 {
+    line-height: 14.5vh;
+}
+
+@media screen and (max-width:944px) {
+    list {
+        top: 23.5vh;
+    }
+
+    .list h2 {
+        line-height: 10.5vh;
+    }
+
+    .footer {
+        font-size: 1.2rem;
+    }
+
+    .version {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:755px) {
+    .footer {
+        font-size: 1.563rem;
+    }
+
+    .version {
+        font-size: 1.563rem;
+    }
+}
+
+@media screen and (max-width:483px) {
+
+    .footer {
+        font-size: 2.441rem;
+    }
+
+    .version {
+        font-size: 2.441rem;
+    }
+}

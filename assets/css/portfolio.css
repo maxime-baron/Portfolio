@@ -1,0 +1,171 @@
+#portfolio {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+#portfolio .content {
+    height: 100%;
+    width: 100%;
+    padding: 13.33vh 8.3vw;
+}
+
+#portfolio h3 {
+    line-height: 9.33vh;
+    margin-bottom: 3vh;
+    color: transparent;
+}
+
+#portfolio h3 span::after {
+    background: #FAFAFA;
+}
+
+.projets {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projet {
+    width: 39.93vw;
+    height: 55.55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6.11vh 6.80vw;
+    background-color: #FAFAFA;
+    color: #101010;
+    border-radius: 20px;
+}
+
+.projet p {
+    font-size: 1rem;
+    width: 100%;
+    font-weight: 500;
+    text-align: justify;
+    letter-spacing: 0.08em;
+    line-height: 2.4vh;
+    height: 22.22vh;
+}
+
+.projet h5 {
+    line-height: 4.77vh;
+    margin-bottom: 2.22vh;
+}
+
+.techno {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2.33vh 0;
+}
+
+.techno button {
+    background-color: #101010;
+    color: #FAFAFA;
+    width: 4.16vw;
+    height: 3.33vh;
+}
+
+.see {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.see button {
+    padding: 10px 20px;
+    background-color: #101010;
+    color: #FAFAFA;
+    width: 8.32vw;
+    height: 6.66vh;
+
+    font-size: 1.563rem;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media screen and (max-width:944px) {
+    .projet p {
+        font-size: 1.25rem;
+        line-height: 2.0vh;
+    }
+
+    .techno button {
+        width: 4.16vw;
+        height: 2.33vh;
+    }
+
+    .see button {
+        width: 7.32vw;
+        height: 4.66vh;
+        padding: 5% 5%;
+    }
+}
+
+@media screen and (max-width:755px) {
+    .projet {
+        padding: 2.11vh 3.8vw;
+        height: 46.55vh;
+    }
+
+    .techno button {
+        font-size: 1.563rem;
+        width: 6.16vw;
+        height: 2.33vh;
+    }
+
+    .projet p {
+        font-size: 1.953rem;
+        line-height: 2vh;
+    }
+
+    .see button {
+        width: 9.32vw;
+    }
+}
+
+@media screen and (max-width:630px) {
+
+    #portfolio .content {
+        padding: 2.55vh 9.33vw;
+    }
+
+    .projet p {
+        height: fit-content;
+    }
+
+    .projets {
+        flex-direction: column;
+    }
+
+    .projet {
+        width: 80%;
+        margin: 1vh auto;
+        flex-direction: column;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width:483px) {
+
+    .projet p {
+        font-size: 2.441rem;
+        line-height: 1.5vh;
+    }
+
+    .techno button {
+        font-size: 2.441rem;
+        width: 9.16vw;
+        height: 2.5vh;
+    }
+
+    .see button {
+        width: 11.32vw;
+        height: 3.66vh;
+        padding: 5% 5%;
+        font-size: 2.441rem;
+    }
+}

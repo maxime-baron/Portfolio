@@ -1,0 +1,111 @@
+#skills {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+#skills .content h3 {
+    margin-bottom: 11vh;
+}
+
+.skillsLevel {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7vh;
+}
+
+.skillInfo {
+    width: 50%;
+    display: flex;
+    margin: 2vh 0;
+    /* justify-content: space-between; */
+}
+
+.image {
+    width: 4.86vw;
+    height: 6.66vh;
+    margin-right: 1.38vw;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.skillBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.label {
+    font-size: 2.441rem;
+    margin: 0.2vh 0.5vw;
+}
+
+.labelLegend {
+    display: flex;
+    justify-content: space-between;
+}
+
+.level {
+    display: flex;
+}
+
+.level span {
+    content: "";
+    width: 4.16vw;
+    height: 1.77vh;
+    background-color: #e0e0e0;
+    margin: 0 0.5vw;
+}
+
+.level span.black {
+    background-color: #101010;
+}
+
+@media screen and (max-width:944px) {
+    .level span {
+        content: "";
+        width: 4.16vw;
+        height: 1.5vh;
+        background-color: #e0e0e0;
+        margin: 0 0.5vw;
+        margin-bottom: 1.5vh;
+    }
+}
+
+@media screen and (max-width:755px) {
+    #skills .content h3 {
+        margin-bottom: 8vh;
+    }
+}
+
+@media screen and (max-width:483px) {
+
+    .skillInfo {
+        width: 100%;
+        margin: 0 0;
+    }
+
+    .image {
+        width: 10.86vw;
+        height: 7.66vh;
+    }
+
+    .level span {
+        height: 0.8vh;
+        margin-bottom: 2.2vh;
+    }
+
+    .label {
+        font-size: 4.441rem;
+    }
+
+    .level span {
+        content: "";
+        width: 10.16vw;
+        height: 1vh;
+        margin-bottom: 1.8vh;
+    }
+}

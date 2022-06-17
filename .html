@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/menuBar.css">
+    <link rel="stylesheet" href="assets/css/aboutMe.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="stylesheet" href="assets/css/skills.css">
+    <title>Maxime Baron</title>
+</head>
+
+<body>
+    <header class="menuBar">
+        <div class="burgerMenu">
+            <span></span>
+        </div>
+        <div class="pageInfo">
+            <span class="currentPage">01</span>
+            <div class="line"></div>
+            <span class="totalPage">04</span>
+        </div>
+    </header>
+    <nav id="menu">
+        <div class="list">
+            <a href="#home">
+                <h2 class="menuLabel"><span>01</span>Acceuil</h2>
+            </a>
+            <a href="#aboutMe">
+                <h2 class="menuLabel"><span>02</span>à propos</h2>
+            </a>
+            <a href="#portfolio">
+                <h2 class="menuLabel"><span>03</span>portfolio</h2>
+            </a>
+            <a href="#skills">
+                <h2 class="menuLabel"><span>04</span>compétences</h2>
+            </a>
+        </div>
+        <div class="version">
+            <span>V 0.9 - 15 juin 2022</span>
+        </div>
+        <div class="footer">
+            <span>Design et developpement par Maxime - maxime.baron2002@gmail.com</span>
+        </div>
+    </nav>
+    <main>
+        <section id="home">
+            <div class="sec blackBack">
+                <h1 class="phrase start"><span id="bonjour">Bonjour</span>, je suis <span id="undr">Maxime</span>, WEB
+                    Developper
+                </h1>
+            </div>
+            <div class="sec whiteBack">
+                <h1 class="phrase alt"><span id="bonjour">Bonjour</span>, je suis <span id="undr">Maxime</span>, WEB
+                    Developper
+                </h1>
+            </div>
+        </section>
+        <section id="aboutMe" class="whiteBack">
+            <div class="content">
+                <h3><span class="appar">à propos de moi :</span></h3>
+                <p>Je suis un développeur pas tout à fait junior puisque toujours étudiant. Passionné de création,
+                    d’apprentissage et du monde numérique, le développement WEB représente donc pour moi la parfaite
+                    conjonction entre ces domaines. J’aime beaucoup coder, j’ai d’abord pensé que c’est ce que je ferais
+                    toute ma vie, mais j’ai finalement aimer créé et designer. C’était tout d’abord par souci de
+                    lisibilité.
+                    Je suis ensuite resté sans voix en voyant les créations d’autres développeur, c’était pour moi le
+                    coup
+                    d’envoi de mon autodidactie.</p>
+            </div>
+        </section>
+        <section id="portfolio" class="blackBack">
+            <div class="content">
+                <h3 class="porto"><span class="appar">portfolio :</span></h3>
+                <div class="projets">
+                    <div class="easyportal projet">
+                        <h5>easyportal</h5>
+                        <p>EASYPORTAL est mon projet de fin d’année de BTS. Le projet consiste en une caméra qui va lire
+                            les
+                            plaques d’immatriculation et les comparé à celles inscritent sur la BDD afin de pouvoir
+                            ouvrir
+                            un portail si la plaque est autorisé. Ma partie consistait à la création d’un site WEB
+                            d’administration du systéme. La encore je me suis passé de bootstrap pour tout faire à la
+                            main
+                            afin d’avoir un site unique.</p>
+                        <div class="techno">
+                            <button>HTML</button>
+                            <button>CSS</button>
+                            <button>JS</button>
+                            <button>PHP</button>
+                        </div>
+                        <div class="see">
+                            <a href="https://github.com/Ewixam/EasyPortal"><button>Voir</button></a>
+                        </div>
+                    </div>
+                    <div class="filmStreamingIllegal projet">
+                        <h5>FILMStremingILLEGAL</h5>
+                        <p>FILMSTREAMINGILLEGAL est un projet scolaire qui reprend les clichés autour des films de
+                            streaming
+                            illégal et des hackers. à l’origine, la consigne était simplement de faire un site de cinéma
+                            qui
+                            affiche des films à la une récupéré via une BDD. Avec mon groupe, nous avons voulu nous
+                            amusez
+                            avec une interface audacieuse entiérement fais main qui sortais de notre enseignement
+                            Bootstrap.
+                        </p>
+                        <div class="techno">
+                            <button>HTML</button>
+                            <button>CSS</button>
+                            <button>JS</button>
+                            <button>PHP</button>
+                        </div>
+                        <div class="see">
+                            <a href="https://github.com/Ewixam/FSI"><button>Voir</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="whiteBack">
+            <div class="content">
+                <h3><span class="appar">Compétences :</span></h3>
+                <p>Afficher simplement des diagrammes illustrant mon niveau de maîtrise de ceci ou cela n'est pas très
+                    révélateur, c'est pourquoi je vais donc plutôt afficher mon ressenti à la place.</p>
+                <div class="skillsLevel">
+                    <div class="api skillInfo">
+                        <div class="image"><img src="assets/img/svg/API.svg" alt="API"></div>
+                        <div class="skillBar">
+                            <span class="label">API</span>
+                            <div class="level">
+                                <span class="black"></span>
+                                <span class="black"></span>
+                                <span class="black"></span>
+                                <span class="black"></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="responsive skillInfo">
+                        <div class="image"><img src="assets/img/svg/Responsive.svg" alt="API"></div>
+                        <div class="skillBar">
+                            <span class="label">Responsive</span>
+                            <div class="level">
+                                <span class="black"></span>
+                                <span class="black"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design skillInfo">
+                        <div class="image"><img src="assets/img/svg/Design.svg" alt="API"></div>
+                        <div class="skillBar">
+                            <span class="label">Design</span>
+                            <div class="level">
+                                <span class="black"></span>
+                                <span class="black"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="php skillInfo">
+                        <div class="image"><img src="assets/img/svg/PHP.svg" alt="API"></div>
+                        <div class="skillBar">
+                            <span class="label">PHP</span>
+                            <div class="level">
+                                <span class="black"></span>
+                                <span class="black"></span>
+                                <span class="black"></span>
+                                <span class="black"></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="javaScript skillInfo">
+                        <div class="image"><img src="assets/img/svg/JS.svg" alt="API"></div>
+                        <div class="skillBar">
+                            <span class="label">JavaScript</span>
+                            <div class="level">
+                                <span class="black"></span>
+                                <span class="black"></span>
+                                <span class="black"></span>
+                                <span class="black"></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="legend skillInfo">
+                        <div class="image"></div>
+                        <div class="skillBar">
+                            <span class="label labelLegend">
+                                <span>Pas alaise</span>
+                                <span>trés alaise</span>
+                            </span>
+                            <div class="level">
+                                <span class="black"></span>
+                                <span class="black"></span>
+                                <span class="black"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/scripts/JS/main.js"></script>
+    <script src="assets/scripts/JS/scrollCancel.js"></script>
+    </script>
+</body>
+
+</html>
