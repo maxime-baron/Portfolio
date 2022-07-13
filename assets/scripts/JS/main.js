@@ -6,6 +6,7 @@ positionCalculation()
 menuSwitch()
 pageNumSwitch()
 pageNumAdd()
+addProjects()
 
 menuItem.forEach(link => link.addEventListener("click", smoothScroll))
 
@@ -175,4 +176,47 @@ function menuSwitch() {
 
     if (menu.classList.contains("open"))
         menu.classList.remove('black')
+}
+
+function addProjects() {
+    const prev = document.querySelector(".prev")
+    const next = document.querySelector(".next")
+    const projetDiv = document.querySelector(".projets")
+
+    console.log(projetDiv.children);
+    for (var i = 0; i < 2; i++) {
+        projetDiv.children[i].style.display = "flex"
+    }
+
+    next.addEventListener("click", () => {
+        if (projetDiv.children[0].style.display == "flex" & projetDiv.children[1].style.display == "flex") {
+            projetDiv.children[2].style.display = "flex"
+            projetDiv.children[0].style.display = "none"
+        } else if (projetDiv.children[0].style.display == "none" & projetDiv.children[1].style.display == "flex") {
+            projetDiv.children[3].style.display = "flex"
+            projetDiv.children[1].style.display = "none"
+        } else if (projetDiv.children[0].style.display == "none" & projetDiv.children[1].style.display == "none") {
+            projetDiv.children[0].style.display = "flex"
+            projetDiv.children[1].style.display = "flex"
+            projetDiv.children[2].style.display = "none"
+            projetDiv.children[3].style.display = "none"
+        }
+    })
+
+    prev.addEventListener("click", () => {
+        if (projetDiv.children[0].style.display == "flex" & projetDiv.children[1].style.display == "flex") {
+            projetDiv.children[3].style.display = "flex"
+            projetDiv.children[2].style.display = "flex"
+            projetDiv.children[0].style.display = "none"
+            projetDiv.children[1].style.display = "none"
+        } else if (projetDiv.children[3].style.display == "flex" & projetDiv.children[2].style.display == "flex") {
+            projetDiv.children[1].style.display = "flex"
+            projetDiv.children[3].style.display = "none"
+        } else if (projetDiv.children[0].style.display == "none" & projetDiv.children[1].style.display == "flex") {
+            projetDiv.children[0].style.display = "flex"
+            projetDiv.children[1].style.display = "flex"
+            projetDiv.children[3].style.display = "none"
+            projetDiv.children[2].style.display = "none"
+        }
+    })
 }
